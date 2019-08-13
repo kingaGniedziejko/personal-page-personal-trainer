@@ -1,0 +1,38 @@
+:root {
+    --main-font-family: 'Quicksand', sans-serif;
+    --background-color: #ffffff;
+    --color-1: #12331d;
+    --color-2: #24593e;
+    --color-3: #8ca545;
+    --color-4: #dac42f;
+    --color-5: #daad11;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--main-font-family);
+    background-color: var(--background-color);
+    color: var(--color-1);
+}
+
+#menu{
+    font-size: 1.8rem
+}
+
+a:link {
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-1);
+}
+
+a:visited {
+    color: var(--color-1);
+}
+
