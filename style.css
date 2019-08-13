@@ -1,11 +1,14 @@
 :root {
-    --main-font-family: 'Quicksand', sans-serif;
+    /* --main-font-family: 'Quicksand', sans-serif; */
+    --main-font-family: 'Montserrat',sans-serif;
     --background-color: #ffffff;
+    --background-color-faded: #ffffffea;
     --color-1: #12331d;
     --color-2: #24593e;
     --color-3: #8ca545;
     --color-4: #dac42f;
     --color-5: #daad11;
+    --color-6: #e7b546;
 }
 
 * {
@@ -15,24 +18,221 @@
 
 html {
     font-family: var(--main-font-family);
+    font-weight: 100;
     background-color: var(--background-color);
+    color: var(--color-2);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+    padding: 10px;
     color: var(--color-1);
 }
 
-#menu{
-    font-size: 1.8rem
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-a:link {
+.container>*{
+    box-sizing: border-box;
+    padding: 5vw;
+}
+
+#menu {
+    width: 100%;
+    height: 10vh;
+    padding: 0 3vw;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--background-color-faded);
+}
+
+#menu>a {
+    margin: 10px;
+    flex: 1;
+    text-transform: uppercase;
+    text-align: center;
+    transition: font-size 0.2s ease-out;
+}
+
+#menu>a:link {
     color: var(--color-1);
     text-decoration: none;
 }
 
-a:hover {
+#menu>a:hover {
+    color: var(--color-1);
+    font-size: 1.2rem;
+}
+
+#menu>a:visited {
     color: var(--color-1);
 }
 
-a:visited {
+#menu .socials{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu .socials>* {
+    margin: 15px;
+    max-width: 50px;
+}
+
+#home {
+    background-image: url(images/background_photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#home h1{
+    font-size: 3rem;
+}
+
+#home p {
+    display: block;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+#home>* {
+    color: var(--background-color);
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+
+#about .about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 90%;
+    background-color: var(--color-6);
+}
+
+#about .about-container .description {
+    width: 25%;
+    position: relative;
+    right: 55px;
+}
+
+#success h2,
+#contact h2 {
+    text-align: center;
+}
+
+#success h2{
+    font-size: 2rem;
+    margin: 20px;
+}
+
+#success h3 {
+    font-size: 1.6rem;
+    margin: 20px;
+}
+
+#success h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+#success h5{
+    font-size: 1rem;
+}
+
+#success {
+    width: 90%;
+    height: fit-content;
+    font-weight: 100;
+    background-color: var(--color-3);
     color: var(--color-1);
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#success div {
+    margin: 6% 3%;
+    text-align: center;
+}
+
+#success hr {
+    width: 60%;
+    border: 0.3px solid var(--color-1);
+    margin: 5px;
+}
+
+#quote h1{
+    margin: 30px;
+    font-size: 3rem;
+    color: var(--color-6);
+}
+
+#contact {
+    width: 70vw;
+    height: 90vh;
+    background-color: var(--color-1);
+    color: var(--background-color);
+    margin: 40px;
+    margin-bottom: 60px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact h2 {
+    color: var(--background-color);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+#contact .contact-container {
+    display: flex;
+}
+
+#contact .data {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact .data>div{
+    margin: 20px;
+}
+
+#contact .map {
+    width: 300px;
+    height: 300px;
 }
 
