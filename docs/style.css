@@ -133,7 +133,6 @@ h2 {
     align-items: center;
     width: 70vw;
     height: 90%;
-    background-color: var(--color-6);
 }
 
 #about .about-container .description {
@@ -170,7 +169,6 @@ h2 {
     width: 90%;
     height: fit-content;
     font-weight: 100;
-    background-color: var(--color-3);
     color: var(--color-1);
     margin: 20px 0;
     display: flex;
