@@ -366,14 +366,43 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #contact h2 {
     margin-bottom: 40px;
 }
 
+#contact .data {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .data>div{
+    margin: 10px 5%;
+}
+
+#contact .data hr {
+    height: 3px;
+    width: 3px;
+    margin: 20px;
+    background-color: var(--color-1);
+    border: none;
+}
+
+@media only screen and (max-width: 800px) {
+    #contact .data>* {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 #contact .contact-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -384,27 +413,64 @@ h2 {
     margin: 10px;
 }
 
-#contact .data {
-    width: 200px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#contact .data>div{
-    margin: 20px;
-}
-
 #contact .form {
-    width: 300px;
-    height: 300px;
-    border: 1px solid #202020;
+    padding: 10px;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact form>* {
+    height: 35px;
+    width: 350px;
+    padding: 4px;
+    margin: 5px;
+    font-weight: 800;
+    border: 2px var(--color-1) solid;
+    font-family: var(--main-font-family);
+    box-sizing: border-box;
+}
+
+#contact #name,
+#contact #email {
+    margin-right: 3px;
+    width: 169px;
+}
+
+#contact #message {
+    height: 140px;
+    resize: none;
+}
+
+#contact #submit {
+    height: 40px;
+    background-color: var(--color-1);
+    border: 2px var(--color-1) solid;
+    color: var(--background-color);
+}
+
+@media only screen and (max-width: 400px) {
+    #contact .form {
+        text-align: center;
+    }
+
+    #contact form>* {
+        width: 90%;
+    }
+
+    #contact #name,
+    #contact #email {
+        width: 90%;
+    }
 }
 
 #contact .map {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* contact end*/
