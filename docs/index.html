@@ -12,21 +12,20 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
-        <script src="index.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="container">
             <div id="menu" class="menu">
                 <div class="menu-opc">
-                    <a href="#">wstęp</a>
+                    <a id="link-home" class="menu-link" href="#" onclick="hideMenu('link-home')">wstęp</a>
                     <hr>
-                    <a href="#about">o mnie</a>
+                    <a id="link-about" class="menu-link" href="#about" onclick="hideMenu('link-about')">o mnie</a>
                     <hr>
-                    <a href="#offer">oferta</a>
+                    <a id="link-offer" class="menu-link" href="#offer" onclick="hideMenu('link-offer')">oferta</a>
                     <hr>
-                    <a href="#success">sukcesy</a>
+                    <a id="link-success" class="menu-link" href="#success" onclick="hideMenu('link-success')">sukcesy</a>
                     <hr>
-                    <a href="#contact">kontakt</a>
+                    <a id="link-contact" class="menu-link" href="#contact" onclick="hideMenu('link-contact')">kontakt</a>
                     <div class="socials">
                         <a href="#" target="_blank"><img id="fb" width="25px" height="25px" src="images/facebook-logo.png" alt="Facebook logo"></a>
                     </div>
@@ -130,4 +129,5 @@
             </div>
         </div>
     </body>
+    <script src="index.js" type="text/javascript"></script>
 </html>
